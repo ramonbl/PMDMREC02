@@ -1,0 +1,2 @@
+rootProject.name='PMDM_REC02'
+include ':app'

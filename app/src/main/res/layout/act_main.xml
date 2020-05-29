@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyActMainPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    tools:context=".Act_Main">
+
+    <!--LAYOUT PARA FRAGMENT EN EL HEADER-->
+    <LinearLayout
+        android:id="@+id/fragHeader"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!--
+
+        añadía en el anterior:
+        android:name="com.ramonbl.pmdm_rec02.Frag_HeaderUsuarioUsuario"
+        tools:layout="@layout/frag_header_usuario"-->
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lyActMainDatos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="LOGIN"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgUsuarioTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbUsuarioTipoAnonimo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:nextFocusForward="@id/btLoginEnviar"
+                    android:onClick="mRbOnClick"
+                    android:text="Anónimo" />
+
+                <RadioButton
+                    android:id="@+id/rbUsuarioTipoAdmin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="mRbOnClick"
+
+                    android:text="Admin" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/etUsuarioUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:cursorVisible="true"
+                android:enabled="false"
+                android:focusable="true"
+                android:hint="Escribe el nombre de usuario (admin)"
+                android:nextFocusForward="@id/etUsuarioPassword"
+                android:padding="8dp"
+                android:visibility="gone"
+
+                />
+
+            <EditText
+                android:id="@+id/etUsuarioPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:cursorVisible="true"
+                android:enabled="false"
+                android:focusable="true"
+                android:hint="Escribe el password (abc123.)"
+                android:nextFocusForward="@id/btLoginEnviar"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btLoginEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:onClick="mBtOnClick"
+            android:text="Enviar" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

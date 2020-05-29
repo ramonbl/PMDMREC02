@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyActAnadirFasePrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    tools:context=".ActAnadirFase">
+
+    <LinearLayout
+        android:id="@+id/fragHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/tvAnadirNumeroFase"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fase: "
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/etAnadirNumeroFase"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="number"
+                android:hint="Añade el número de fase" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvAnadirCaracteristicasFase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Características: "
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etAnadirCaracteristicasFase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:ems="15"
+            android:hint="Escribe las características de la fase"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btGuardarFase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar fase"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="mBtOnClick"
+            />
+
+        <Button
+            android:id="@+id/btAnadirFase_Volver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="mBtOnClick"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

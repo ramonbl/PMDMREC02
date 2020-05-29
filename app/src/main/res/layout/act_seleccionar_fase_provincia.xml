@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyActSeleccionarFaseProvinciaPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    tools:context=".ActSeleccionarFaseProvincia">
+
+    <LinearLayout
+        android:id="@+id/fragHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSeleccionarFaseProvincia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Selecciona la fase en la que se encuentra una provincia "
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <Spinner
+                android:id="@+id/spinProvincias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+
+            <Spinner
+                android:id="@+id/spinFases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btSeleccionarFaseProvincia_Guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar fase de la provincia"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="mBtOnClick"
+            />
+
+        <Button
+            android:id="@+id/btSeleccionarFaseProvincia_Volver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="mBtOnClick"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

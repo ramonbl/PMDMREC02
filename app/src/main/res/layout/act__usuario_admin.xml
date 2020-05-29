@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyActUsuarioAnonimoPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    tools:context=".Act_UsuarioAdmin">
+
+    <LinearLayout
+        android:id="@+id/fragHeader"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!--
+
+        añadía en el anterior:
+        android:name="com.ramonbl.pmdm_rec02.Frag_HeaderUsuarioUsuario"
+        tools:layout="@layout/frag_header_usuario"-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSeleccionarProvincias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Administración de fases "
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btUsuarioAdminAnadirFase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:onClick="mBtOnClick"
+            android:text="Añadir fase" />
+
+        <Button
+            android:id="@+id/btUsuarioAdminSeleccionarFaseProvincia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:onClick="mBtOnClick"
+            android:text="Seleccionar Fase para provincia" />
+
+    </LinearLayout>
+</LinearLayout>
